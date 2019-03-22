@@ -2,15 +2,6 @@
 Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
-
-// for background color change
-function bgColor() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-    document.body.style.background = bgColor;
-    }
 /***
 Array of quotes....
 ***/
@@ -36,9 +27,14 @@ source:"Sylvester Stallon",
 citation:"Rocky Balboa" ,
 year:"Dec 22, 2006"
 }];
-console.log(quotes)
-
-
+// for background color change on click
+function bgColor() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    document.body.style.background = bgColor;
+    }
 
 function getRandomQuote(){
   var randomIndex = Math.floor(Math.random() * (quotes.length));
@@ -47,11 +43,10 @@ function getRandomQuote(){
   }
 }
 
-
 // calls the quote
 function printQuote(){
 
-  // call to change the background color
+// call to change the background color
   bgColor();
 
   var getQuote = getRandomQuote();
