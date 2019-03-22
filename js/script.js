@@ -12,7 +12,7 @@ function bgColor() {
     document.body.style.background = bgColor;
     }
 /***
-Array of quotes
+Array of quotes....
 ***/
 var quotes = [{
 quote: "Im a dreamer I have to dream and reach for the stars and if I miss a star then I grab a handful of clouds",
